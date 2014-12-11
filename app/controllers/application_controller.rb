@@ -9,9 +9,11 @@ class ApplicationController < ActionController::Base
 
 protected
 
-def configure_permitted_parameters
-  #strong parametersを設定し、useridを許可
-  devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:userid, :password, :password_confirmation, :email) }
+  def configure_permitted_parameters
+    #strong parametersを設定し、useridを許可
+    devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:userid, :password, :password_confirmation, :email) }
 
+  end
+  
 end
 
