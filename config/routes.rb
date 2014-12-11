@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+
+  devise_for :users
+  resources :inquiries
+  resources :responses
+
   root to: redirect('/desks')
   resources :desks
 

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Accepted datetime:</strong>
+  <%= @inquiry.accepted_datetime %>
+</p>
+
+<p>
+  <strong>Inquired person:</strong>
+  <%= @inquiry.inquired_person %>
+</p>
+
+<p>
+  <strong>Contents:</strong>
+  <%= @inquiry.contents %>
+</p>
+
+<%= link_to 'Edit', edit_inquiry_path(@inquiry) %> |
+<%= link_to 'Back', inquiries_path %>

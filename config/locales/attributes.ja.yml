@@ -1,0 +1,7 @@
+ja:
+  activerecord:
+    attributes:
+      desk:
+        who: 誰から
+        Q: 質問
+        date: 日付

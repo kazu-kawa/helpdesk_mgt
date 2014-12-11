@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  responced_datetime: 2014-12-11 02:26:09
+  user_id: 
+  contents: MyText
+
+two:
+  responced_datetime: 2014-12-11 02:26:09
+  user_id: 
+  contents: MyText
