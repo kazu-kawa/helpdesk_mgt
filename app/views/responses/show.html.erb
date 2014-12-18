@@ -1,19 +1,19 @@
 
 
 <p>
-  <strong>Responced datetime:</strong>
+  <strong><%= t('activerecord.attributes.response.responced_datetime') %>:</strong>
   <%= @response.responced_datetime %>
 </p>
 
 <p>
-  <strong>User:</strong>
+  <strong><%= t('activerecord.attributes.response.user') %>:</strong>
   <%= @response.user %>
 </p>
 
 <p>
-  <strong>Contents:</strong>
+  <strong><%= t('activerecord.attributes.response.contents') %>:</strong>
   <%= @response.contents %>
 </p>
 
-<%= link_to 'Edit', edit_response_path(@response) %> |
-<%= link_to 'Back', responses_path %>
+<%= link_to t('views.edit'), edit_response_path(@response) %> |
+<%= link_to t('views.back_to_list'), responses_path %>

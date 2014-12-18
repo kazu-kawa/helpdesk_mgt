@@ -28,7 +28,7 @@ class InquiriesController < ApplicationController
 
     respond_to do |format|
       if @inquiry.save
-        format.html { redirect_to @inquiry, notice: 'Inquiry was successfully created.' }
+        format.html { redirect_to @inquiry, notice: t('messages.inquiry_created') }
         format.json { render :show, status: :created, location: @inquiry }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class InquiriesController < ApplicationController
   def update
     respond_to do |format|
       if @inquiry.update(inquiry_params)
-        format.html { redirect_to @inquiry, notice: 'Inquiry was successfully updated.' }
+        format.html { redirect_to @inquiry, notice: t('messages.inquiry_updated') }
         format.json { render :show, status: :ok, location: @inquiry }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class InquiriesController < ApplicationController
   def destroy
     @inquiry.destroy
     respond_to do |format|
-      format.html { redirect_to inquiries_url, notice: 'Inquiry was successfully destroyed.' }
+      format.html { redirect_to inquiries_url, notice: t('messages.inquiry_destroyed') }
       format.json { head :no_content }
     end
   end

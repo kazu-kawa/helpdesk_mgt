@@ -1,19 +1,19 @@
 
 
 <p>
-  <strong><%= t('activerecord.attributes.inquiries.accepted_datetime') %>:</strong>
+  <strong><%= t('activerecord.attributes.inquiry.accepted_datetime') %>:</strong>
   <%= @inquiry.accepted_datetime %>
 </p>
 
 <p>
-  <strong><%= t('activerecord.attributes.inquiries.inquired_person') %>:</strong>
+  <strong><%= t('activerecord.attributes.inquiry.inquired_person') %>:</strong>
   <%= @inquiry.inquired_person %>
 </p>
 
 <p>
-  <strong><%= t('activerecord.attributes.inquiries.contents') %>:</strong>
+  <strong><%= t('activerecord.attributes.inquiry.contents') %>:</strong>
   <%= @inquiry.contents %>
 </p>
 
-<%= link_to 'Edit', edit_inquiry_path(@inquiry) %> |
-<%= link_to 'Back', inquiries_path %>
+<%= link_to t('views.edit'), edit_inquiry_path(@inquiry) %> |
+<%= link_to t('views.back_to_list'), inquiries_path %>

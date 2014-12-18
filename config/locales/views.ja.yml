@@ -2,5 +2,17 @@ ja:
   views:
     desk_title: ヘルプデスク問い合わせ一覧
     desk_new_title: ヘルプデスク問い合わせの新規登録
-    inquiries_title: 問合せ一覧
-    responses_title: 回答一覧
+    inquiries_list: 問合せ一覧
+    inquiry_create: 問合せの新規登録
+    inquiry_show: 問合せの表示
+    inquiry_edit: 問合せの更新
+    inquiry_destroy: 問い合わせの削除
+    responses_list: 回答一覧
+    response_create: 回答の新規登録
+    response_show: 回答の表示
+    response_edit: 回答の更新
+    response_destroy: 回答の削除
+    show: 表示
+    edit: 更新
+    destroy: 削除
+    back_to_list: 一覧へ戻る

@@ -1,11 +1,11 @@
-<h1>Listing responses</h1>
+<h1><%= t('views.responses_list') %></h1>
 
 <table>
   <thead>
     <tr>
-      <th>Responced datetime</th>
-      <th>User</th>
-      <th>Contents</th>
+      <th><%= t('activerecord.attributes.response.responced_datetime') %></th>
+      <th><%= t('activerecord.attributes.response.user_id') %></th>
+      <th><%= t('activerecord.attributes.response.contents') %></th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,9 +16,9 @@
         <td><%= response.responced_datetime %></td>
         <td><%= response.user %></td>
         <td><%= response.contents %></td>
-        <td><%= link_to 'Show', response %></td>
-        <td><%= link_to 'Edit', edit_response_path(response) %></td>
-        <td><%= link_to 'Destroy', response, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to t('views.show'), response %></td>
+        <td><%= link_to t('views.edit'), edit_response_path(response) %></td>
+        <td><%= link_to t('views.destroy'), response, method: :delete, data: { confirm: t('messages.confirm_destroy') } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Response', new_response_path %>
+<%= link_to t('views.response_create'), new_response_path %>

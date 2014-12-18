@@ -9,3 +9,7 @@ ja:
         accepted_datetime: 受付日時
         inquired_person: 問い合わせ者
         contents: 問合せ内容
+      response:
+        responced_datetime: 回答日時
+        user: 回答者
+        contents: 回答内容

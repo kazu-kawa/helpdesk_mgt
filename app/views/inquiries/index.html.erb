@@ -1,4 +1,4 @@
-<h1><%= t('views.inquiries_title') %></h1>
+<h1><%= t('views.inquiries_list') %></h1>
 
 <table>
   <thead>
@@ -16,9 +16,9 @@
         <td><%= inquiry.accepted_datetime %></td>
         <td><%= inquiry.inquired_person %></td>
         <td><%= inquiry.contents %></td>
-        <td><%= link_to 'Show', inquiry %></td>
-        <td><%= link_to 'Edit', edit_inquiry_path(inquiry) %></td>
-        <td><%= link_to 'Destroy', inquiry, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to t('views.show'), inquiry %></td>
+        <td><%= link_to t('views.edit'), edit_inquiry_path(inquiry) %></td>
+        <td><%= link_to t('views.destroy'), inquiry, method: :delete, data: { confirm: t('messages.confirm_destroy') } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,6 +26,6 @@
 
 <br>
 
-<%= link_to 'New Inquiry', new_inquiry_path %>
+<%= link_to t('views.inquiry_create'), new_inquiry_path %>
 <br>
 <br>

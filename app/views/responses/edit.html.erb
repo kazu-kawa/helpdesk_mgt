@@ -1,6 +1,6 @@
-<h1>Editing response</h1>
+<h1><%= t('views.response_edit') %></h1>
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @response %> |
-<%= link_to 'Back', responses_path %>
+<%= link_to t('views.show'), @response %> |
+<%= link_to t('views.back_to_list'), responses_path %>

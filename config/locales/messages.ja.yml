@@ -1,0 +1,9 @@
+ja:
+  messages:
+    inquiry_created: 問い合わせを登録しました。
+    inquiry_updated: 問い合わせを更新しました。
+    inquiry_destroyed: 問合せを削除しました。
+    response_created: 回答を登録しました。
+    response_updated: 回答を更新しました。
+    response_destroyed: 回答を削除しました。
+    confirm_destroy: 削除してよろしいですか？
